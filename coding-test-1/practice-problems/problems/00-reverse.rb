@@ -6,17 +6,19 @@
 # Difficulty: easy.
 
 def reverse(string)
+	answer = ""
+	idx = 0
+	while idx < string.length
+		answer = string[idx] + answer
+		idx += 1
+	end
+	return answer
 end
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
-puts(
-  'reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s
-)
-puts(
-  'reverse("a") == "a": ' + (reverse("a") == "a").to_s
-)
-puts(
-  'reverse("") == "": ' + (reverse("") == "").to_s
-)
+# puts( 'reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s )
+# puts( 'reverse("a") == "a": ' + (reverse("a") == "a").to_s )
+# puts( 'reverse("") == "": ' + (reverse("") == "").to_s )
+puts (reverse("abcde"))

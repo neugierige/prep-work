@@ -4,6 +4,9 @@
 # Difficulty: easy.
 
 def sum_nums(num)
+	answer = 0
+	(0..num).each {|n| answer += n }
+	return answer
 end
 
 # These are tests to check that your code is working. After writing

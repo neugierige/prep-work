@@ -6,7 +6,15 @@
 # Difficulty: easy.
 
 def factorial(n)
+	answer = 1
+
+	while n >= 1 
+		answer = n*answer
+		n -= 1
+	end
+	return answer
 end
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

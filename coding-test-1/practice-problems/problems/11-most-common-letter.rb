@@ -5,6 +5,16 @@
 # Difficulty: medium.
 
 def most_common_letter(string)
+	mcl = ""
+	mcl_count = 0
+
+	i = 0
+	while i < string.length
+		if string[i] = string[i]
+			count += 1
+		end
+	end 
+
 end
 
 # These are tests to check that your code is working. After writing

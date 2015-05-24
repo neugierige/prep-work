@@ -5,6 +5,16 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+	vowels = []
+	idx = 0
+	while idx < string.length
+		if (string[idx] == "a" || string[idx] == "e" || string[idx] == "i" || string[idx] == "o" || string[idx] == "u")
+			vowels << string[idx]
+		end
+		idx += 1
+	end
+
+	return vowels.count
 end
 
 # These are tests to check that your code is working. After writing

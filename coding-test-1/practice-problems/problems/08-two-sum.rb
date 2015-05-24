@@ -5,7 +5,24 @@
 # Difficulty: medium.
 
 def two_sum(nums)
+
+	for index1 in 0...nums.length
+		
+		for index2 in 0...nums.length
+		
+			if nums[index1] == nums[index2]*-1
+				return [index1, index2]
+			else 
+				return nil
+			end
+
+		end
+
+	end
+
 end
+
+puts two_sum([1, 3, 5, -3])
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

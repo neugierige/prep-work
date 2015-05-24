@@ -5,6 +5,24 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+	letter1 = 0
+	letter2 = 0
+	for index in 0...string.length
+		if string[index] == "a"
+			letter1 = index
+		end
+
+		if string[index] == "z"
+			letter2 = index
+		end
+	end
+
+	if letter2 <= letter1 + 3 && letter1 < letter2
+		return true
+	else
+		return false
+	end
+
 end
 
 # These are tests to check that your code is working. After writing

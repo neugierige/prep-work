@@ -6,6 +6,18 @@
 # Difficulty: easy.
 
 def palindrome?(string)
+	rvrs_str = ""
+	idx = 0
+	while idx < string.length
+		rvrs_str = string[idx] + rvrs_str
+		idx += 1
+	end
+
+	if rvrs_str == string 
+		return true
+	else
+		return false
+	end
 end
 
 # These are tests to check that your code is working. After writing

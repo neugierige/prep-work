@@ -4,7 +4,17 @@
 # Difficulty: easy.
 
 def time_conversion(minutes)
+	hh = minutes / 60
+	mm = minutes % 60
+	if mm < 10
+		mm = "0" + mm.to_s
+	end
+	answer = "#{hh}:#{mm}"
+	answer
 end
+
+puts time_conversion(360)
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

@@ -5,7 +5,12 @@
 # Difficulty: medium.
 
 def third_greatest(nums)
+	num_sorted = nums.sort
+	count = num_sorted.count
+	return num_sorted[count-3]
 end
+
+puts third_greatest([5, 3, 7, 4])
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

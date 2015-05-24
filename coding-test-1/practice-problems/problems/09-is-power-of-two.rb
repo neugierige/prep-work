@@ -8,7 +8,26 @@
 # Difficulty: medium.
 
 def is_power_of_two?(num)
+	x = 0
+	while 2**x <= num
+		if 2**x == num
+			return true
+		end
+		x += 1
+	end
+	return false
+
+	# while num != 1
+	# 	if num % 2 == 0
+	# 		num = num / 2
+	# 		puts num
+	# 	else
+	# 		return false
+	# 	end
+	# 	return true
+	# end
 end
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

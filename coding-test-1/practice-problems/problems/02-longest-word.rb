@@ -7,7 +7,21 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+	longest = nil
+	array = sentence.split(" ")
+
+	idx = 0
+	while idx < array.length
+		if longest == nil
+			longest = array[idx]
+		elsif array[idx].length > longest.length
+			longest = array[idx]
+		end
+		idx += 1
+	end
+	return longest
 end
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

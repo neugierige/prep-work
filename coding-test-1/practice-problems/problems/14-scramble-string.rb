@@ -5,7 +5,17 @@
 # Difficulty: medium.
 
 def scramble_string(string, positions)
+	new_string = ""
+	idx = 0
+	while idx < positions.count
+		idx2 = positions[idx]
+		new_string = new_string + string[idx2]
+		idx += 1
+	end
+
+	return new_string
 end
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
